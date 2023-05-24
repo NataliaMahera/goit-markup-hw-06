@@ -642,3 +642,45 @@ body {
     transition: fill var(--transition-dur-and-func);
 }
 /* ===============/MODAL WINDOW================= */
+
+/* ===============MODAL FORM================= */
+.modal-form-desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-light);
+}
+
+.modal-form-input-desc {
+    font-size: 12px;
+    line-height: 1.16px;
+    letter-spacing: 0.04em;
+    color: var(--thirdly-page-color);
+}
+
+.input-link {
+    color: var(--accent-page-color);
+}
+
+.modal-form-check-desc {
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.04em;
+color: var(--thirdly-page-color);
+}
+
+.modal-form-submit-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    color: var(--background-color-theme-light); 
+    background-color: var(--accent-page-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/* ===============/MODAL FORM================= */
