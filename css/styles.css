@@ -604,6 +604,7 @@ body {
     background-color: var(--modal-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform var(--transition-dur-and-func);
+    padding: 72px 24px 24px 24px;
 }
 
 .modal-close-btn {
@@ -644,43 +645,180 @@ body {
 /* ===============/MODAL WINDOW================= */
 
 /* ===============MODAL FORM================= */
+/* .modal-form {
+    display: flex;
+    flex-direction: column;
+    max-height: 488;
+    padding: 72px 24px 24px 24px; 
+} */
+
 .modal-form-desc {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-theme-light);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* =INPUTS-NAME_PHONE_EMAIL= */
+.modal-form-field {
+    display: block;
+    margin-bottom: 8px;
 }
 
 .modal-form-input-desc {
+    /* display: block; */
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.16px;
     letter-spacing: 0.04em;
     color: var(--thirdly-page-color);
+    margin-bottom: 4px;
 }
 
-.input-link {
+.modal-form-input{
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    color: var(--primary-text-color-theme-light);
+    transform: border-color var(--transition-dur-and-func);
+}
+
+.modal-form-input:focus {
+    outline: none;
+    border-color: var(--accent-page-color);
+}
+
+.modal-form-input-wrapper {
+    position: relative;
+    display: block;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    /* display: block; */
+    fill: var(--primary-text-color-theme-light);
+    cursor: pointer;
+    transition: fill var(--transition-dur-and-func),
+    filter var(--transition-dur-and-func);
+}
+
+.modal-form-input:focus + .input-icon {
+    fill: var(--accent-page-color);
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+/* =/NAME_PHONE_EMAIL= */
+
+
+/* =TEXTAREA=*/
+.modal-form-text-input {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.modal-form-message {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    color: var(--primary-text-color-theme-light);
+    transition: border-color var(--transition-dur-and-func);
+}
+
+.modal-form-message::placeholder {
+    padding-top: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16px;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-form-message:focus {
+    outline: none;
+    border-color: var(--accent-page-color);
+}
+/* =/TEXTAREA=*/
+
+/* =CHECKBOX= */
+
+/* .modal-form-check-desc::before {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    content: "";
+    cursor: pointer;
+    margin-right: 8px;
+} */
+
+.policy-link {
     color: var(--accent-page-color);
 }
 
 .modal-form-check-desc {
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.04em;
-color: var(--thirdly-page-color);
-}
+    /* display: flex; */
+    /* align-items: center; */
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: var(--thirdly-page-color);
+    margin-bottom: 24px;
+} 
+
+/* .modal-form-input-fake-check {
+    opacity: 0;
+} */
+
+/* .fake-check {
+opacity: 0;
+} */
+/* .modal-form-check:checked + .modal-form-input-fake-check + span {
+opacity: 1;
+} */
+
+
+/* .modal-form-check:checked + .modal-form-check-desc::before {
+background-color: var(--accent-color);
+border-color: var(--accent-color);
+} */
+
+.modal-form-check:focus + .modal-form-check-desc::before {
+    /* background-color: var(--accent-color); */
+    border-color: var(--accent-color);
+    }
 
 .modal-form-submit-btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    align-self: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.04em;
+    text-align: center;
     border-radius: 4px;
     color: var(--background-color-theme-light); 
+    border: none;
+    padding: 16px 32px;
+    min-width: 169px;
     background-color: var(--accent-page-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--transition-dur-and-func);
+}
+
+.modal-form-submit-btn:focus {
+    background-color: var(--accent-color);
 }
 /* ===============/MODAL FORM================= */
