@@ -663,7 +663,7 @@ body {
 /* =INPUTS-NAME_PHONE_EMAIL= */
 
 .modal-form-field {
-    /* display: block; */
+    display: block;
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
@@ -681,7 +681,7 @@ body {
     color: var(--primary-text-color-theme-light);
     background-color: transparent;
     outline: transparent;
-    transform: border-color var(--transition-dur-and-func);
+    transition: border-color var(--transition-dur-and-func);
 }
 
 .modal-form-input:focus {
@@ -751,10 +751,8 @@ body {
 }
 
 .modal-form-check-desc {
-    /* display: flex;
-    align-items: center; */
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.17px;
     letter-spacing: 0.04em;
     color: var(--thirdly-page-color);
 } 
@@ -763,33 +761,28 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    fill: transparent;
     width: 16px;
     height: 16px;
-    padding: 4px 3px;
+    padding: 0;
     background-color:transparent;
-    border: 1px solid rgba(46, 47, 66, 0.2);;
+    border: 1px solid rgba(46, 47, 66, 0.2);
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
 }
 
-.modal-form-checkbox:checked + .modal-form-check-desc > .modal-form-own-checkbox {
+.modal-form-checkbox:checked + .modal-form-checkbox-container + .modal-form-own-checkbox {
     border: none;
     background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .modal-form-checkbox:focus + .modal-form-check-desc > .modal-form-own-checkbox {
     background-color: var(--accent-color);
-}
-
-.modal-form-checkbox:checked + .modal-form-check-desc > .modal-form-own-checkbox > .modal-form-chekmark-icon {
-    opacity: 1;
     fill: var(--primary-text-color-theme-dark);
 }
 
-.modal-form-chekmark-icon {
-    opacity: 0;
-}
 /* =SUBMIT BUTTON= */
 .modal-form-submit-btn {
     display: block;
