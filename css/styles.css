@@ -464,6 +464,10 @@ body {
     margin-bottom: 16px;
 }
 
+/* .social-media-container {
+    margin-right: 80px;
+} */
+
 .social-list-footer {
     display: flex;
     flex-wrap: wrap;
@@ -474,6 +478,10 @@ body {
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--accent-background-color);
+}
+
+.subscribe-form-container {
+   margin-left: auto;
 }
 
 .footer-form {
@@ -672,6 +680,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: background-color var(--transition-dur-and-func),
     border var(--transition-dur-and-func);
+    transition: background-color var(--transition-dur-and-func);
 }
 
 .modal-close-btn-icon {
