@@ -832,10 +832,10 @@ body {
     margin-right: 8px;
 }
 
-.modal-form-checkbox:checked + .modal-form-checkbox-container + .modal-form-own-checkbox {
+.modal-form-checkbox:checked + .modal-form-check-desc + .modal-form-own-checkbox {
+    background-color: var(--accent-color);
     border: none;
     fill: var(--background-color-theme-light);
-    background-color: var(--accent-color);
     border-color: var(--accent-color);
 }
 
